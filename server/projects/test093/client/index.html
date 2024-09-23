@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyEats - Online Food Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-green-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-serif">HealthyEats</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-green-200">Home</a></li>
+                    <li><a href="#" class="hover:text-green-200">Shop</a></li>
+                    <li><a href="#" class="hover:text-green-200">Subscriptions</a></li>
+                    <li><a href="#" class="hover:text-green-200">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8">
+        <section id="hero" class="bg-blue-500 text-white p-12 rounded-lg mb-8">
+            <h2 class="text-4xl font-serif mb-4">Healthy Eating Made Easy</h2>
+            <p class="mb-6">Discover our curated selection of healthy, packaged foods.</p>
+            <a href="#" class="bg-white text-blue-500 px-6 py-2 rounded-full font-bold hover:bg-blue-100">Shop Now</a>
+        </section>
+
+        <section id="featured-products" class="mb-12">
+            <h2 class="text-2xl font-serif mb-4">Featured Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="subscription" class="bg-green-100 p-8 rounded-lg mb-12">
+            <h2 class="text-2xl font-serif mb-4">Monthly Subscription Box</h2>
+            <p class="mb-4">Get a curated selection of healthy snacks delivered to your door every month!</p>
+            <a href="#" class="bg-green-600 text-white px-6 py-2 rounded-full font-bold hover:bg-green-700">Subscribe Now</a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 HealthyEats. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

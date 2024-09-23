@@ -1,0 +1,8 @@
+{
+    "ignore": [
+      "projects/**/node_modules/*",
+      "projects/**/package-lock.json",
+      "projects/**/*.json"
+    ],
+    "delay": "25000"
+  }

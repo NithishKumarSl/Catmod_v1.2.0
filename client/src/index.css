@@ -1,0 +1,234 @@
+body {
+  background-color: aliceblue;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsl(225, 6%, 13%);
+  align-items: center;
+}
+
+header .logo{
+  height: 50px;
+  width: 50px;
+}
+
+header .logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+header .inputContainer{
+  display: flex;
+  gap: 10px;
+}
+
+header .inputContainer input {
+  width: 450px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  background-color: #121212;
+  color: #dfdfdf;
+}
+
+header button{
+  margin-right: 10px;
+  padding: 8px 16px;
+  color: white;
+  background-color: hsl(225, 6%, 25%);
+  border: 'none';
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.top-pane {
+  background-color: hsl(225, 6%, 25%);
+}
+
+.pane {
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: hsl(225, 6%, 25%);
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+}
+
+.expand-collapse-btn {
+  margin-left: .5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(225, 6%, 13%);
+  color: white;
+  padding: .5rem .5rem .5rem 1rem;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  overflow: hidden;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.projectName {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for a modern look */
+  padding: 40px;
+  max-width: 450px; /* Increased max-width for better layout */
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.projectName:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+h1 {
+  color: #5e4b8a; /* Violet color for the heading */
+  margin-bottom: 10px;
+  font-size: 1.8em; /* Larger font size for the heading */
+}
+
+p {
+  color: #555; /* Dark grey for the paragraph text */
+  margin-bottom: 20px;
+  line-height: 1.5; /* Improved line height for readability */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Dark grey for labels */
+  font-weight: bold; /* Bold labels for emphasis */
+}
+
+
+
+.projectName input[type="text"] {
+  width: 90%;
+  padding: 12px; /* Increased padding for a more comfortable input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 16px;
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.projectName input[type="text"]:focus {
+  border-color: #5e4b8a; /* Violet border on focus */
+  outline: none; /* Remove default outline */
+}
+
+.projectName button {
+  background-color: #5e4b8a; /* Violet button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px; /* Increased padding for a more substantial button */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.projectName button:hover {
+  background-color: #4b3f6b; /* Darker violet on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.error {
+  color: red; /* Red color for error messages */
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  color: #777; /* Light grey for footer text */
+  font-size: 0.9em; /* Slightly smaller font for footer */
+}
+
+.footer a {
+  color: #5e4b8a; /* Violet link */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #4b3f6b; /* Darker violet on hover */
+}
+
+/* ProjectName.css */
+
+/* Additional styles for the benefits section */
+.benefits {
+  margin: 20px 0;
+  text-align: left; /* Align text to the left for better readability */
+}
+
+.benefits h2 {
+  color: #5e4b8a; /* Violet color for the subheading */
+  margin-bottom: 10px;
+}
+
+.benefits ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+}
+
+.benefits li {
+  margin: 10px 0; /* Space between list items */
+  font-size: 1em; /* Standard font size for list items */
+  color: #333; /* Dark grey for list text */
+}
+
+input[type="text"]::placeholder {
+  color: #aaa; /* Placeholder color */
+  font-style: italic; /* Italic style for placeholder */
+}
